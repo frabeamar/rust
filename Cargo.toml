@@ -17,3 +17,9 @@ winit = "0.28"
 bytemuck = { version = "1.4", features = ["derive"] }
 anyhow = "1.0"
 rand ="0.8"
+
+[workspace]
+members = [ "file_word_cnt" , "http_client", "protohackers"]
+
+[workspace.dependencies]
+clap ={version = "4", features = ["derive"]}
